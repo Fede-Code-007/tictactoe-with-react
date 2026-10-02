@@ -1,4 +1,4 @@
-#🎮 Tic Tac Toe with React
+# 🎮 Tic Tac Toe with React
 
 Implementación del clásico juego **Tres en Raya (Tic Tac Toe)** desarrollada con **React.js** y **Vite** como proyecto de práctica para aprender los fundamentos del desarrollo de interfaces interactivas.
 
@@ -6,7 +6,7 @@ El proyecto permite jugar partidas entre dos jugadores, detectar automáticament
 
 ---
 
-##📋 Características
+## 📋 Características
 
 * **Dos jugadores:** partidas entre los símbolos `O` y `X`.
 * **Gestión de turnos:** alternancia automática entre jugadores.
@@ -19,7 +19,7 @@ El proyecto permite jugar partidas entre dos jugadores, detectar automáticament
 
 ---
 
-##🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 
 * **React.js:** desarrollo de interfaces mediante componentes.
 * **JavaScript:** implementación de la lógica del juego.
@@ -30,7 +30,7 @@ El proyecto permite jugar partidas entre dos jugadores, detectar automáticament
 
 ---
 
-##⚙️ Requisitos previos
+## ⚙️ Requisitos previos
 
 Antes de ejecutar el proyecto, necesitás tener instalado:
 
@@ -40,7 +40,7 @@ Antes de ejecutar el proyecto, necesitás tener instalado:
 
 ---
 
-##🚀 Instalación y ejecución
+## 🚀 Instalación y ejecución
 
 **1. Clonar el repositorio**
 
@@ -76,7 +76,7 @@ http://localhost:5173
 
 ---
 
-##📝 Cómo jugar
+## 📝 Cómo jugar
 
 1. El jugador `O` comienza la partida.
 2. Los jugadores se alternan seleccionando una casilla vacía.
@@ -88,7 +88,7 @@ http://localhost:5173
 
 ---
 
-##📁 Estructura del proyecto
+## 📁 Estructura del proyecto
 
 ```text
 src/
@@ -111,7 +111,7 @@ src/
 ```
 ---
 
-##📚 Organización y responsabilidades
+## 📚 Organización y responsabilidades
 
 ### Componentes
 
@@ -155,7 +155,7 @@ Centraliza los valores constantes utilizados por la aplicación, evitando repeti
 
 ---
 
-##💾 Persistencia de datos
+## 💾 Persistencia de datos
 
 El proyecto utiliza `localStorage`, una API del navegador que permite almacenar información de manera persistente entre recargas de la página.
 
@@ -169,7 +169,7 @@ La información permanece almacenada en el navegador hasta que se sobrescribe o 
 
 ---
 
-##🎯 Objetivos de aprendizaje
+## 🎯 Objetivos de aprendizaje
 
 Este proyecto se desarrolló para practicar conceptos fundamentales de React y mejorar la comprensión de cómo se construyen aplicaciones web interactivas.
 
@@ -188,15 +188,15 @@ Los principales conceptos trabajados son:
 
 ---
 
-##🔮 Posibles mejoras
+## 🔮 Posibles mejoras
 
 Algunas funcionalidades que podrían incorporarse en futuras versiones son:
 
-* Contador de victorias, derrotas y empates.
-* Selección de nombres para los jugadores.
-* Modo de juego contra la computadora.
-* Selector de tema claro y oscuro.
-* Mejoras de accesibilidad y diseño responsive.
-* Pruebas automatizadas para los componentes y las reglas del juego.
+* Contador de victorias para cada jugador.
+* Selector de nombre para los jugadores.
+* Modo contra la computadora.
+* Modo oscuro/claro.
+* Diseño responsive mejorado.
+
 
   
