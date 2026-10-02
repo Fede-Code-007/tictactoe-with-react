@@ -1,19 +1,166 @@
-# React + Vite
+# 🎮 Tic Tac Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Versión del clásico juego de **Tres en Raya (Tic Tac Toe)** desarrollado con **React** como proyecto de práctica para trabajar con componentes, estado, hooks y persistencia de datos.
 
-Currently, two official plugins are available:
+## ✨ Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🎯 Juego para dos jugadores: **O vs X**
+* 🔄 Cambio automático de turno
+* 🏆 Detección de ganador
+* 🤝 Detección de empate
+* 💾 Persistencia de la partida utilizando `localStorage`
 
-## React Compiler
+## 🛠️ Tecnologías
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* **React**
+* **JavaScript**
+* **Vite**
+* **CSS**
+* **HTML**
+* **LocalStorage**
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## 📂 Estructura principal del proyecto
 
-## Expanding the Oxlint configuration
+```text
+src/
+├── components/
+│   ├── Board.jsx
+│   ├── Square.jsx
+│   ├── Turns.jsx
+│   └── WinnerModal.jsx
+│
+├── hooks/
+│   └── useGame.js
+│
+├── logic/
+│   └── board.js
+│
+├── constants.js
+├── App.jsx
+├── App.css
+└── main.jsx
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Componentes principales
+
+#### `App.jsx`
+
+Es el componente principal de la aplicación. Se encarga de combinar los diferentes componentes y conectar la interfaz con `useGame`.
+
+#### `Board.jsx`
+
+Renderiza el tablero y sus nueve casillas.
+
+#### `Square.jsx`
+
+Representa cada casilla del tablero y controla su interacción.
+
+#### `Turns.jsx`
+
+Muestra el jugador cuyo turno está activo.
+
+#### `WinnerModal.jsx`
+
+Muestra el resultado de la partida y permite iniciar una nueva.
+
+### Hook personalizado
+
+#### `useGame.js`
+
+Centraliza la lógica principal de la partida:
+
+* Estado del tablero.
+* Turno actual.
+* Ganador.
+* Actualización de las jugadas.
+* Reinicio de la partida.
+* Persistencia mediante `localStorage`.
+* Animación de confeti.
+
+### Lógica del juego
+
+#### `logic/board.js`
+
+Contiene las funciones encargadas de comprobar las reglas del juego:
+
+* `checkWinner()`
+* `checkEndGame()`
+
+Estas funciones están separadas de los componentes de React para mantener la lógica del juego independiente de la interfaz.
+
+## 🚀 Instalación
+
+Cloná el repositorio:
+
+```bash
+git clone URL_DEL_REPOSITORIO
+```
+
+Entrá en la carpeta:
+
+```bash
+cd tictactoe-with-react
+```
+
+Instalá las dependencias:
+
+```bash
+npm install
+```
+
+Iniciá el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+Luego abrí en el navegador la dirección indicada por Vite, normalmente:
+
+```text
+http://localhost:5173
+```
+
+## 🎮 Cómo jugar
+
+1. El jugador **O** comienza la partida.
+2. Los jugadores se alternan colocando su símbolo.
+3. El primero en conseguir tres símbolos consecutivos gana.
+4. Si se llenan las nueve casillas sin ganador, la partida termina en empate.
+5. La partida se guarda automáticamente en el navegador.
+6. Al recargar la página, el estado de la partida se recupera.
+7. El botón de reinicio permite comenzar una nueva partida.
+
+## 💾 Persistencia
+
+El juego utiliza `localStorage` para guardar:
+
+* El estado del tablero.
+* El turno actual.
+* El resultado de la partida.
+
+Esto permite que una partida continúe después de cerrar o recargar la página.
+
+## 📚 Objetivos del proyecto
+
+Este proyecto fue realizado para practicar conceptos fundamentales de React:
+
+* Componentes.
+* Props.
+* `useState`.
+* Custom Hooks.
+* Renderizado de listas.
+* Eventos.
+* Estado compartido entre componentes.
+* Separación de responsabilidades.
+* Persistencia con `localStorage`.
+
+## 📌 Próximos pasos...
+
+Entre las funcionalidades que podrían incorporarse al proyecto en versiones futuras se encuentran:
+
+* Contador de victorias para cada jugador.
+* Selector de nombre para los jugadores.
+* Modo contra la computadora.
+* Modo oscuro/claro.
+* Diseño responsive mejorado.
+
