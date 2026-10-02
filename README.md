@@ -93,7 +93,7 @@ Estas funciones están separadas de los componentes de React para mantener la l�
 Cloná el repositorio:
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/Fede-Code-007/tictactoe-with-react.git
 ```
 
 Entrá en la carpeta:
